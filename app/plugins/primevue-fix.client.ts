@@ -23,11 +23,11 @@ export default defineNuxtPlugin(() => {
       display: inline-block !important;
     }
     
-    /* PrimeVue Button fixes with enhanced specificity */
-    .p-button,
-    .p-button:not(.p-button-text):not(.p-button-outlined),
-    button.p-component.p-button,
-    .p-component.p-button {
+    /* PrimeVue Button fixes with enhanced specificity - exclude LiveChat buttons */
+    .p-button:not([class*="fixed"]):not([class*="w-12"]):not([class*="w-8"]):not([class*="w-10"]),
+    .p-button:not(.p-button-text):not(.p-button-outlined):not([class*="fixed"]):not([class*="w-12"]):not([class*="w-8"]):not([class*="w-10"]),
+    button.p-component.p-button:not([class*="fixed"]):not([class*="w-12"]):not([class*="w-8"]):not([class*="w-10"]),
+    .p-component.p-button:not([class*="fixed"]):not([class*="w-12"]):not([class*="w-8"]):not([class*="w-10"]) {
       background-color: rgb(22, 70, 162) !important;
       border-color: rgb(22, 70, 162) !important;
       color: white !important;
@@ -46,10 +46,10 @@ export default defineNuxtPlugin(() => {
       gap: 0.5rem !important;
     }
     
-    .p-button:hover,
-    .p-button:not(.p-button-text):not(.p-button-outlined):hover,
-    button.p-component.p-button:hover,
-    .p-component.p-button:hover {
+    .p-button:hover:not([class*="fixed"]):not([class*="w-12"]):not([class*="w-8"]):not([class*="w-10"]),
+    .p-button:not(.p-button-text):not(.p-button-outlined):hover:not([class*="fixed"]):not([class*="w-12"]):not([class*="w-8"]):not([class*="w-10"]),
+    button.p-component.p-button:hover:not([class*="fixed"]):not([class*="w-12"]):not([class*="w-8"]):not([class*="w-10"]),
+    .p-component.p-button:hover:not([class*="fixed"]):not([class*="w-12"]):not([class*="w-8"]):not([class*="w-10"]) {
       background-color: rgb(18, 62, 145) !important;
       border-color: rgb(18, 62, 145) !important;
       color: white !important;
@@ -57,8 +57,8 @@ export default defineNuxtPlugin(() => {
       box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.1) !important;
     }
 
-    .p-button:focus,
-    button.p-component.p-button:focus {
+    .p-button:focus:not([class*="fixed"]):not([class*="w-12"]):not([class*="w-8"]):not([class*="w-10"]),
+    button.p-component.p-button:focus:not([class*="fixed"]):not([class*="w-12"]):not([class*="w-8"]):not([class*="w-10"]) {
       box-shadow: 0 0 0 3px rgba(22, 70, 162, 0.2) !important;
       outline: none !important;
     }
@@ -120,9 +120,9 @@ export default defineNuxtPlugin(() => {
   `
   document.head.appendChild(style)
   
-  // Apply fixes to any existing buttons after a short delay
+  // Apply fixes to any existing buttons after a short delay - exclude LiveChat buttons
   setTimeout(() => {
-    const buttons = document.querySelectorAll('.p-button, button.p-component')
+    const buttons = document.querySelectorAll('.p-button:not([class*="fixed"]):not([class*="w-12"]):not([class*="w-8"]):not([class*="w-10"]), button.p-component:not([class*="fixed"]):not([class*="w-12"]):not([class*="w-8"]):not([class*="w-10"])')
     buttons.forEach((button: Element) => {
       const btn = button as HTMLElement
       btn.style.setProperty('background-color', 'rgb(22, 70, 162)', 'important')

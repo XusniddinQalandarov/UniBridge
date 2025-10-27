@@ -35,8 +35,8 @@
     @apply bg-gray-50;
   }
   
-  /* PrimeVue Button overrides to prevent Tailwind interference */
-  .p-button {
+  /* PrimeVue Button overrides to prevent Tailwind interference - exclude LiveChat buttons */
+  .p-button:not([class*="fixed"]):not([class*="w-12"]):not([class*="w-8"]):not([class*="w-10"]) {
     @apply inline-flex items-center justify-center;
     font-family: inherit !important;
     font-weight: 500 !important;
@@ -45,7 +45,7 @@
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
   }
   
-  .p-button:not(.p-button-text):not(.p-button-outlined) {
+  .p-button:not(.p-button-text):not(.p-button-outlined):not([class*="fixed"]):not([class*="w-12"]):not([class*="w-8"]):not([class*="w-10"]) {
     background-color: rgb(22, 70, 162) !important;
     border-color: rgb(22, 70, 162) !important;
     color: white !important;
@@ -60,7 +60,7 @@
     gap: 0.5rem !important;
   }
   
-  .p-button:not(.p-button-text):not(.p-button-outlined):hover {
+  .p-button:not(.p-button-text):not(.p-button-outlined):not([class*="fixed"]):not([class*="w-12"]):not([class*="w-8"]):not([class*="w-10"]):hover {
     background-color: rgb(18, 62, 145) !important;
     border-color: rgb(18, 62, 145) !important;
     color: white !important;
@@ -68,8 +68,8 @@
     box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.1) !important;
   }
 
-  /* More specific selectors for button styling */
-  button.p-component.p-button {
+  /* More specific selectors for button styling - exclude LiveChat buttons */
+  button.p-component.p-button:not([class*="fixed"]):not([class*="w-12"]):not([class*="w-8"]):not([class*="w-10"]) {
     background-color: rgb(22, 70, 162) !important;
     border-color: rgb(22, 70, 162) !important;
     color: white !important;
@@ -80,7 +80,7 @@
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
   }
   
-  button.p-component.p-button:hover {
+  button.p-component.p-button:not([class*="fixed"]):not([class*="w-12"]):not([class*="w-8"]):not([class*="w-10"]):hover {
     background-color: rgb(18, 62, 145) !important;
     border-color: rgb(18, 62, 145) !important;
     color: white !important;
