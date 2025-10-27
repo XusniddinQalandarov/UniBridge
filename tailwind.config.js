@@ -6,7 +6,9 @@ export default {
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
     "./app.vue",
-    "./error.vue"
+    "./error.vue",
+    "./app/**/*.{js,vue,ts}",
+    "./node_modules/primevue/**/*.{vue,js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {

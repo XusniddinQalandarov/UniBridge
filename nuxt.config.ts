@@ -66,15 +66,20 @@ export default defineNuxtConfig({
             }
           }
         }
-      }
+      },
+      ripple: true
     },
     components: {
+      include: '*'
+    },
+    directives: {
       include: '*'
     }
   },
 
   css: [
-    'primeicons/primeicons.css'
+    'primeicons/primeicons.css',
+    '~/assets/css/main.css'
   ],
 
   app: {
@@ -87,7 +92,8 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap' }
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap' },
+        { rel: 'preload', href: 'https://cdn.jsdelivr.net/npm/primeicons@7.0.0/primeicons.css', as: 'style', onload: 'this.onload=null;this.rel="stylesheet"' }
       ]
     }
   }
