@@ -109,3 +109,67 @@ const formatTime = (date: Date) => {
   return date.toLocaleTimeString('uz-UZ', { hour: '2-digit', minute: '2-digit' })
 }
 </script>
+
+<style scoped>
+/* LiveChat specific button styles - these will override any global PrimeVue styles */
+.p-button {
+  border: none !important;
+  border-radius: 50% !important;
+}
+
+/* Main chat toggle button */
+.p-button.bg-primary-500 {
+  background: rgb(59 130 246) !important; /* blue-500 */
+  color: white !important;
+  border-radius: 50% !important;
+  width: 3rem !important;
+  height: 3rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.p-button.bg-primary-500:hover {
+  background: rgb(37 99 235) !important; /* blue-600 */
+}
+
+/* Close button in header */
+.p-button.bg-transparent {
+  background: transparent !important;
+  color: white !important;
+  border-radius: 50% !important;
+  width: 2rem !important;
+  height: 2rem !important;
+}
+
+.p-button.bg-transparent:hover {
+  background: rgba(37, 99, 235, 0.8) !important; /* blue-600 with opacity */
+}
+
+/* Send button */
+.p-button.w-10 {
+  background: rgb(59 130 246) !important; /* blue-500 */
+  color: white !important;
+  border-radius: 0.375rem !important; /* rounded */
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.p-button.w-10:hover {
+  background: rgb(37 99 235) !important; /* blue-600 */
+}
+
+.p-button.w-10:disabled {
+  background: rgb(156 163 175) !important; /* gray-400 */
+  cursor: not-allowed !important;
+}
+
+/* Ensure icons are properly styled */
+.p-button .pi {
+  font-size: 1rem !important;
+  line-height: 1 !important;
+}
+</style>
