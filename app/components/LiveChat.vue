@@ -111,65 +111,146 @@ const formatTime = (date: Date) => {
 </script>
 
 <style scoped>
-/* LiveChat specific button styles - these will override any global PrimeVue styles */
-.p-button {
+/* LiveChat specific button styles - enhanced specificity for production */
+.p-button,
+button.p-button,
+.p-component.p-button {
   border: none !important;
-  border-radius: 50% !important;
+  font-family: inherit !important;
+  line-height: 1.5 !important;
+  transition: all 0.2s ease !important;
 }
 
-/* Main chat toggle button */
-.p-button.bg-primary-500 {
+/* Main chat toggle button - enhanced selectors */
+.p-button.bg-primary-500,
+button.p-button.bg-primary-500,
+.p-component.p-button.bg-primary-500,
+.w-12.bg-primary-500,
+.w-12 .p-button,
+button.w-12 {
   background: rgb(59 130 246) !important; /* blue-500 */
   color: white !important;
+  border: none !important;
   border-radius: 50% !important;
   width: 3rem !important;
   height: 3rem !important;
+  min-width: 3rem !important;
+  min-height: 3rem !important;
+  max-width: 3rem !important;
+  max-height: 3rem !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
 }
 
-.p-button.bg-primary-500:hover {
+.p-button.bg-primary-500:hover,
+button.p-button.bg-primary-500:hover,
+.p-component.p-button.bg-primary-500:hover,
+.w-12.bg-primary-500:hover,
+.w-12 .p-button:hover,
+button.w-12:hover {
   background: rgb(37 99 235) !important; /* blue-600 */
 }
 
-/* Close button in header */
-.p-button.bg-transparent {
+/* Close button in header - enhanced selectors */
+.p-button.bg-transparent,
+button.p-button.bg-transparent,
+.p-component.p-button.bg-transparent,
+.w-8.bg-transparent,
+.w-8 .p-button,
+button.w-8 {
   background: transparent !important;
   color: white !important;
+  border: none !important;
   border-radius: 50% !important;
   width: 2rem !important;
   height: 2rem !important;
-}
-
-.p-button.bg-transparent:hover {
-  background: rgba(37, 99, 235, 0.8) !important; /* blue-600 with opacity */
-}
-
-/* Send button */
-.p-button.w-10 {
-  background: rgb(59 130 246) !important; /* blue-500 */
-  color: white !important;
-  border-radius: 0.375rem !important; /* rounded */
-  width: 2.5rem !important;
-  height: 2.5rem !important;
+  min-width: 2rem !important;
+  min-height: 2rem !important;
+  max-width: 2rem !important;
+  max-height: 2rem !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
 }
 
-.p-button.w-10:hover {
+.p-button.bg-transparent:hover,
+button.p-button.bg-transparent:hover,
+.p-component.p-button.bg-transparent:hover,
+.w-8.bg-transparent:hover,
+.w-8 .p-button:hover,
+button.w-8:hover {
+  background: rgba(37, 99, 235, 0.8) !important; /* blue-600 with opacity */
+}
+
+/* Send button - enhanced selectors */
+.p-button.w-10,
+button.p-button.w-10,
+.p-component.p-button.w-10,
+.w-10.bg-primary-500,
+.w-10 .p-button,
+button.w-10 {
+  background: rgb(59 130 246) !important; /* blue-500 */
+  color: white !important;
+  border: none !important;
+  border-radius: 0.375rem !important; /* rounded */
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  min-width: 2.5rem !important;
+  min-height: 2.5rem !important;
+  max-width: 2.5rem !important;
+  max-height: 2.5rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.p-button.w-10:hover,
+button.p-button.w-10:hover,
+.p-component.p-button.w-10:hover,
+.w-10.bg-primary-500:hover,
+.w-10 .p-button:hover,
+button.w-10:hover {
   background: rgb(37 99 235) !important; /* blue-600 */
 }
 
-.p-button.w-10:disabled {
+.p-button.w-10:disabled,
+button.p-button.w-10:disabled,
+.p-component.p-button.w-10:disabled,
+.w-10 .p-button:disabled,
+button.w-10:disabled {
   background: rgb(156 163 175) !important; /* gray-400 */
   cursor: not-allowed !important;
+  opacity: 0.6 !important;
 }
 
-/* Ensure icons are properly styled */
-.p-button .pi {
+/* Icon styling - enhanced selectors */
+.p-button .pi,
+button.p-button .pi,
+.p-component.p-button .pi,
+.p-button i,
+button i,
+.p-button-icon {
   font-size: 1rem !important;
   line-height: 1 !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  display: inline-block !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+/* Ensure proper container sizing */
+.fixed.bottom-6.right-6 {
+  position: fixed !important;
+  bottom: 1.5rem !important;
+  right: 1.5rem !important;
+  z-index: 50 !important;
 }
 </style>

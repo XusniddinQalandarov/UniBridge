@@ -81,83 +81,52 @@ export default defineNuxtPlugin(() => {
     .pi.text-5xl { font-size: 3rem !important; }
     .pi.text-6xl { font-size: 3.75rem !important; }
     
-    /* Custom icon classes for consistent sizing */
-    .student-stat-icon {
-      font-size: 3rem !important;
-      width: 3rem !important;
-      height: 3rem !important;
-      line-height: 1 !important;
-    }
-    
-    .student-timeline-icon {
-      font-size: 1.5rem !important;
-      width: 1.5rem !important;
-      height: 1.5rem !important;
-      line-height: 1 !important;
-    }
-    
-    /* Ensure icons inherit proper sizes */
+    /* Force proper sizing for icons */
     .text-4xl .pi,
     .text-5xl .pi,
     .text-6xl .pi {
       font-size: inherit !important;
     }
     
-    /* PrimeVue Card styling fixes */
+    /* Stats section icons - make them larger */
+    .stats-icon,
+    i.text-4xl,
+    i.text-5xl {
+      font-size: 3rem !important;
+      width: auto !important;
+      height: auto !important;
+    }
+    
+    /* Card component fixes */
     .p-card {
       border-radius: 0.75rem !important;
-      border: 1px solid #e5e7eb !important;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+      background: white !important;
+      border: 1px solid rgba(229, 231, 235, 1) !important;
+      overflow: hidden !important;
     }
-
+    
+    .p-card .p-card-header {
+      background: transparent !important;
+      border-bottom: none !important;
+      padding: 1.5rem !important;
+      padding-bottom: 0 !important;
+    }
+    
     .p-card .p-card-body {
-      border-radius: 0.75rem !important;
+      padding: 1.5rem !important;
     }
-
+    
     .p-card .p-card-content {
-      border-radius: 0.75rem !important;
+      padding: 0 !important;
+    }
+    
+    .p-card .p-card-footer {
+      background: transparent !important;
+      border-top: none !important;
+      padding: 1.5rem !important;
+      padding-top: 0 !important;
     }
   `
   document.head.appendChild(style)
-  
-  // Apply fixes to any existing buttons after a short delay - exclude LiveChat buttons
-  setTimeout(() => {
-    const buttons = document.querySelectorAll('.p-button:not(.fixed):not([class*="w-12"]):not([class*="w-8"]):not([class*="w-10"]):not([class*="rounded-full"]):not([class*="bg-transparent"]), button.p-component:not(.fixed):not([class*="w-12"]):not([class*="w-8"]):not([class*="w-10"]):not([class*="rounded-full"]):not([class*="bg-transparent"])')
-    buttons.forEach((button: Element) => {
-      const btn = button as HTMLElement
-      btn.style.setProperty('background-color', 'rgb(22, 70, 162)', 'important')
-      btn.style.setProperty('border-color', 'rgb(22, 70, 162)', 'important')
-      btn.style.setProperty('color', 'white', 'important')
-      btn.style.setProperty('border-width', '1px', 'important')
-      btn.style.setProperty('border-style', 'solid', 'important')
-      btn.style.setProperty('padding', '0.75rem 1.5rem', 'important')
-      btn.style.setProperty('font-weight', '600', 'important')
-      btn.style.setProperty('border-radius', '0.5rem', 'important')
-      btn.style.setProperty('box-shadow', '0 4px 6px -1px rgba(0, 0, 0, 0.1)', 'important')
-      btn.style.setProperty('display', 'inline-flex', 'important')
-      btn.style.setProperty('align-items', 'center', 'important')
-      btn.style.setProperty('justify-content', 'center', 'important')
-      btn.style.setProperty('gap', '0.5rem', 'important')
-    })
-    
-    // Apply Card styling fixes
-    const cards = document.querySelectorAll('.p-card')
-    cards.forEach((card: Element) => {
-      const cardEl = card as HTMLElement
-      cardEl.style.setProperty('border-radius', '0.75rem', 'important')
-      cardEl.style.setProperty('border', '1px solid #e5e7eb', 'important')
-      cardEl.style.setProperty('box-shadow', '0 4px 6px -1px rgba(0, 0, 0, 0.1)', 'important')
-      
-      // Also apply to card body and content
-      const cardBody = cardEl.querySelector('.p-card-body') as HTMLElement
-      const cardContent = cardEl.querySelector('.p-card-content') as HTMLElement
-      
-      if (cardBody) {
-        cardBody.style.setProperty('border-radius', '0.75rem', 'important')
-      }
-      if (cardContent) {
-        cardContent.style.setProperty('border-radius', '0.75rem', 'important')
-      }
-    })
-  }, 100)
 })
