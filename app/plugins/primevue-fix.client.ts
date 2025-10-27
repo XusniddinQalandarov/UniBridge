@@ -40,6 +40,10 @@ export default defineNuxtPlugin(() => {
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
       font-family: inherit !important;
       line-height: 1.5 !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 0.5rem !important;
     }
     
     .p-button:hover,
@@ -98,6 +102,21 @@ export default defineNuxtPlugin(() => {
     .text-6xl .pi {
       font-size: inherit !important;
     }
+    
+    /* PrimeVue Card styling fixes */
+    .p-card {
+      border-radius: 0.75rem !important;
+      border: 1px solid #e5e7eb !important;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    .p-card .p-card-body {
+      border-radius: 0.75rem !important;
+    }
+
+    .p-card .p-card-content {
+      border-radius: 0.75rem !important;
+    }
   `
   document.head.appendChild(style)
   
@@ -115,6 +134,30 @@ export default defineNuxtPlugin(() => {
       btn.style.setProperty('font-weight', '600', 'important')
       btn.style.setProperty('border-radius', '0.5rem', 'important')
       btn.style.setProperty('box-shadow', '0 4px 6px -1px rgba(0, 0, 0, 0.1)', 'important')
+      btn.style.setProperty('display', 'inline-flex', 'important')
+      btn.style.setProperty('align-items', 'center', 'important')
+      btn.style.setProperty('justify-content', 'center', 'important')
+      btn.style.setProperty('gap', '0.5rem', 'important')
+    })
+    
+    // Apply Card styling fixes
+    const cards = document.querySelectorAll('.p-card')
+    cards.forEach((card: Element) => {
+      const cardEl = card as HTMLElement
+      cardEl.style.setProperty('border-radius', '0.75rem', 'important')
+      cardEl.style.setProperty('border', '1px solid #e5e7eb', 'important')
+      cardEl.style.setProperty('box-shadow', '0 4px 6px -1px rgba(0, 0, 0, 0.1)', 'important')
+      
+      // Also apply to card body and content
+      const cardBody = cardEl.querySelector('.p-card-body') as HTMLElement
+      const cardContent = cardEl.querySelector('.p-card-content') as HTMLElement
+      
+      if (cardBody) {
+        cardBody.style.setProperty('border-radius', '0.75rem', 'important')
+      }
+      if (cardContent) {
+        cardContent.style.setProperty('border-radius', '0.75rem', 'important')
+      }
     })
   }, 100)
 })

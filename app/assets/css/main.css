@@ -54,6 +54,10 @@
     padding: 0.75rem 1.5rem !important;
     font-weight: 600 !important;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
   }
   
   .p-button:not(.p-button-text):not(.p-button-outlined):hover {
@@ -147,6 +151,22 @@
     width: 1.5rem !important;
     height: 1.5rem !important;
   }
+  
+  /* Custom card styles */
+  .p-card {
+    border-radius: 0.75rem !important;
+    border: 1px solid #e5e7eb !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+  }
+
+  .p-card .p-card-body {
+    border-radius: 0.75rem !important;
+  }
+
+  .p-card .p-card-content {
+    border-radius: 0.75rem !important;
+  }
+  
   .pi.text-xl { font-size: 1.25rem !important; }
   .pi.text-2xl { font-size: 1.5rem !important; }
   .pi.text-3xl { font-size: 1.875rem !important; }
