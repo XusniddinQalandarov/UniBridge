@@ -20,7 +20,7 @@
           :key="stat.label"
           class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow"
         >
-          <i :class="stat.icon" class="text-5xl text-[#1646A2] mb-4"></i>
+          <i :class="stat.icon" class="student-stat-icon text-[#1646A2] mb-4"></i>
           <h3 class="text-4xl text-[#1646A2] font-bold mb-2">{{ stat.value }}</h3>
           <p class="text-gray-600 text-sm">{{ stat.label }}</p>
         </div>
@@ -47,7 +47,7 @@
               class="absolute left-0 w-12 h-12 rounded-full flex items-center justify-center text-white text-xl z-10"
               :style="{ backgroundColor: story.color }"
             >
-              <i :class="story.icon"></i>
+              <i :class="story.icon" class="student-timeline-icon"></i>
             </div>
 
             <!-- Content Card -->
@@ -85,7 +85,7 @@
         <div class="max-w-3xl mx-auto">
           <div class="bg-white rounded-xl shadow-lg p-16 text-center border border-gray-100">
             <div class="w-24 h-24 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i class="pi pi-map text-5xl text-[#1646A2]"></i>
+              <i class="pi pi-map student-stat-icon text-[#1646A2]"></i>
             </div>
             <h3 class="text-2xl font-bold text-gray-900 mb-4">15+ shahar</h3>
             <p class="text-gray-600 leading-relaxed">
@@ -98,7 +98,7 @@
                 :key="city"
                 class="bg-blue-50 rounded-lg p-4 text-center"
               >
-                <i class="pi pi-map-marker text-[#1646A2] mb-2 text-xl"></i>
+                <i class="pi pi-map-marker text-[#1646A2] mb-2 text-xl student-timeline-icon"></i>
                 <p class="text-sm font-medium text-gray-700">{{ city }}</p>
               </div>
             </div>

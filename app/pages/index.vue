@@ -49,7 +49,7 @@
       <div class="container">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 px-4 lg:px-0">
           <div v-for="stat in stats" :key="stat.id" class="bg-white p-6 lg:p-8 rounded-xl text-center shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
-            <i :class="stat.icon" class="text-4xl lg:text-5xl text-primary-500 mb-3 lg:mb-4"></i>
+            <i :class="stat.icon" class="student-stat-icon text-primary-500 mb-3 lg:mb-4"></i>
             <h3 class="text-2xl lg:text-4xl font-bold text-primary-500 mb-1 lg:mb-2">{{ stat.value }}</h3>
             <p class="text-sm lg:text-base text-gray-600">{{ stat.label }}</p>
           </div>
@@ -251,28 +251,28 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           <div class="bg-white rounded-2xl shadow-md p-8 flex flex-col items-start transition-all duration-300 hover:-translate-y-2 hover:shadow-lg group">
             <div class="bg-blue-50 rounded-xl p-4 mb-6 flex items-center justify-center transition-colors duration-300 group-hover:bg-primary-500">
-              <i class="pi pi-lock text-4xl group-hover:text-white text-primary-500 transition-colors duration-300"></i>
+              <i class="pi pi-lock student-stat-icon group-hover:text-white text-primary-500 transition-colors duration-300"></i>
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-2">1. Talabaga Konsultatsiya berish</h3>
             <p class="text-gray-600">Talabani qiziqtirgan barcha savollarga javob beriladi, shartnoma shartlari tanishtiriladi.</p>
           </div>
           <div class="bg-white rounded-2xl shadow-md p-8 flex flex-col items-start transition-all duration-300 hover:-translate-y-2 hover:shadow-lg group">
             <div class="bg-blue-50 rounded-xl p-4 mb-6 flex items-center justify-center transition-colors duration-300 group-hover:bg-primary-500">
-              <i class="pi pi-file text-4xl group-hover:text-white text-primary-500 transition-colors duration-300"></i>
+              <i class="pi pi-file student-stat-icon group-hover:text-white text-primary-500 transition-colors duration-300"></i>
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-2">2. Shartnoma tuzish</h3>
             <p class="text-gray-600">Talabani xolati o'rganilgach qulay ta'riflardan birida shartnoma tuzib, talabaga mos universitet tanlanadi.</p>
           </div>
           <div class="bg-white rounded-2xl shadow-md p-8 flex flex-col items-start transition-all duration-300 hover:-translate-y-2 hover:shadow-lg group">
             <div class="bg-blue-50 rounded-xl p-4 mb-6 flex items-center justify-center transition-colors duration-300 group-hover:bg-primary-500">
-              <i class="pi pi-graduation-cap text-4xl group-hover:text-white text-primary-500 transition-colors duration-300"></i>
+              <i class="pi pi-graduation-cap student-stat-icon group-hover:text-white text-primary-500 transition-colors duration-300"></i>
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-2">3. Universitet</h3>
             <p class="text-gray-600">Talabaning Universitetga o'qishga kirishi, Kontrakt to'lashi, Admission olish jarayoni 100% nazorat qilinadi.</p>
           </div>
           <div class="bg-white rounded-2xl shadow-md p-8 flex flex-col items-start transition-all duration-300 hover:-translate-y-2 hover:shadow-lg group">
             <div class="bg-blue-50 rounded-xl p-4 mb-6 flex items-center justify-center transition-colors duration-300 group-hover:bg-primary-500">
-              <i class="pi pi-id-card text-4xl group-hover:text-white text-primary-500 transition-colors duration-300"></i>
+              <i class="pi pi-id-card student-stat-icon group-hover:text-white text-primary-500 transition-colors duration-300"></i>
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-2">4. Viza</h3>
             <p class="text-gray-600">Talabaning hujjatlari vizaga tayyorlanadi, topshiriladi. Viza chiqqanidan so'ng unga kvartira, avia bilet, sim karta, bank kartasi olib berishga yordam beriladi.</p>

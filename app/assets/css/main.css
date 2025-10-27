@@ -49,11 +49,39 @@
     background-color: rgb(22, 70, 162) !important;
     border-color: rgb(22, 70, 162) !important;
     color: white !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    padding: 0.75rem 1.5rem !important;
+    font-weight: 600 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
   }
   
   .p-button:not(.p-button-text):not(.p-button-outlined):hover {
     background-color: rgb(18, 62, 145) !important;
     border-color: rgb(18, 62, 145) !important;
+    color: white !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.1) !important;
+  }
+
+  /* More specific selectors for button styling */
+  button.p-component.p-button {
+    background-color: rgb(22, 70, 162) !important;
+    border-color: rgb(22, 70, 162) !important;
+    color: white !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    padding: 0.75rem 1.5rem !important;
+    font-weight: 600 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  button.p-component.p-button:hover {
+    background-color: rgb(18, 62, 145) !important;
+    border-color: rgb(18, 62, 145) !important;
+    color: white !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.1) !important;
   }
   
   .p-button .p-button-icon {
@@ -77,12 +105,48 @@
   /* Ensure icons maintain proper sizing */
   .pi {
     display: inline-block !important;
+    line-height: 1 !important;
   }
   
   .pi.text-xs { font-size: 0.75rem !important; }
   .pi.text-sm { font-size: 0.875rem !important; }
   .pi.text-base { font-size: 1rem !important; }
   .pi.text-lg { font-size: 1.125rem !important; }
+  .pi.text-xl { font-size: 1.25rem !important; }
+  .pi.text-2xl { font-size: 1.5rem !important; }
+  .pi.text-3xl { font-size: 1.875rem !important; }
+  .pi.text-4xl { font-size: 2.5rem !important; }
+  .pi.text-5xl { font-size: 3rem !important; }
+  .pi.text-6xl { font-size: 3.75rem !important; }
+  
+  /* Specific icon size fixes for different contexts */
+  .text-4xl .pi,
+  .text-5xl .pi,
+  .text-6xl .pi {
+    font-size: inherit !important;
+  }
+  
+  /* Stats section icons - make them larger */
+  .stats-icon,
+  i.text-4xl,
+  i.text-5xl {
+    font-size: 3rem !important;
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+  
+  /* Students page specific icon fixes */
+  .student-stat-icon {
+    font-size: 3rem !important;
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+  
+  .student-timeline-icon {
+    font-size: 1.5rem !important;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+  }
   .pi.text-xl { font-size: 1.25rem !important; }
   .pi.text-2xl { font-size: 1.5rem !important; }
   .pi.text-3xl { font-size: 1.875rem !important; }
