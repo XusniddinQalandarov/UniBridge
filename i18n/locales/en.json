@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "forStudents": "For Students",
+    "universities": "Universities",
+    "faq": "FAQ",
+    "scholarships": "Scholarships & Grants",
+    "resources": "Resource Library",
+    "events": "Events & Webinars",
+    "ourStudents": "Our Students",
+    "reviews": "Reviews",
+    "blog": "News & Blog",
+    "contact": "Contact",
+    "cta": "Free Consultation"
+  },
+  "hero": {
+    "title": "Professional Assistance in Studying at TOP Korean Universities",
+    "subtitle": "Building Your Successful Future Together",
+    "cta": "Book a Free Consultation"
+  },
+  "footer": {
+    "copyright": "© 2025 UniBridge.uz. All rights reserved.",
+    "phone": "Phone",
+    "followUs": "Follow Us"
+  },
+  "common": {
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "apply": "Apply",
+    "download": "Download",
+    "search": "Search",
+    "filter": "Filter",
+    "all": "All",
+    "submit": "Submit",
+    "back": "Back",
+    "next": "Next",
+    "loading": "Loading...",
+    "selectLanguage": "Select Language"
+  }
+}

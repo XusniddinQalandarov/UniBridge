@@ -1,0 +1,29 @@
+{
+  "name": "unibridge",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^4.1.0",
+    "@nuxtjs/i18n": "^10.1.2",
+    "@primevue/nuxt-module": "^4.2.2",
+    "@vueuse/core": "^10.11.0",
+    "gsap": "^3.13.0",
+    "leaflet": "^1.9.4",
+    "nuxt": "^4.2.0",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.2.2",
+    "vue": "^3.5.22",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "@types/leaflet": "^1.9.12"
+  }
+}

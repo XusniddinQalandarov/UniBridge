@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "forStudents": "Talabalar uchun",
+    "universities": "Universitetlar",
+    "faq": "Savol-javoblar",
+    "scholarships": "Grantlar va stipendiyalar",
+    "resources": "Resurslar kutubxonasi",
+    "events": "Tadbirlar va vebinarlar",
+    "ourStudents": "Bizning talabalarimiz",
+    "reviews": "Sharhlar",
+    "blog": "Yangiliklar va blog",
+    "contact": "Bog'lanish",
+    "cta": "Bepul konsultatsiya"
+  },
+  "hero": {
+    "title": "Koreyaning TOP universitetlarida ta'lim olishda professional yordam",
+    "subtitle": "Muvaffaqiyatli kelajagingizni birgalikda quramiz",
+    "cta": "Bepul konsultatsiyaga yozilish"
+  },
+  "footer": {
+    "copyright": "© 2025 UniBridge.uz. Barcha huquqlar himoyalangan.",
+    "phone": "Telefon",
+    "followUs": "Bizni kuzatib boring"
+  },
+  "common": {
+    "readMore": "Batafsil",
+    "learnMore": "Ko'proq bilish",
+    "apply": "Ariza topshirish",
+    "download": "Yuklab olish",
+    "search": "Qidirish",
+    "filter": "Filtrlash",
+    "all": "Hammasi",
+    "submit": "Yuborish",
+    "back": "Orqaga",
+    "next": "Keyingisi",
+    "loading": "Yuklanmoqda...",
+    "selectLanguage": "Tilni tanlang"
+  }
+}
