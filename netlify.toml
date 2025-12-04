@@ -1,9 +1,10 @@
 [build]
-  publish = "dist"
-  command = "npm run build"
+  publish = ".output/public"
+  command = "npm run generate"
 
 [build.environment]
   NODE_VERSION = "20"
+  NPM_FLAGS = "--legacy-peer-deps"
 
 [[redirects]]
   from = "/*"
