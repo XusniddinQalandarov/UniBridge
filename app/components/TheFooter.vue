@@ -8,7 +8,7 @@ const { t } = useI18n()
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Company Info -->
         <div class="space-y-4">
-          <h3 class="text-2xl font-bold text-white">UniBridge</h3>
+          <h3 class="text-2xl font-bold text-white"></h3>
           <p class="text-gray-300 leading-relaxed">
             Koreyaning TOP universitetlarida ta'lim olishda professional yordam
           </p>
@@ -39,15 +39,15 @@ const { t } = useI18n()
           <div>
             <h4 class="text-lg font-semibold text-white mb-3">{{ $t('footer.followUs') }}</h4>
             <div class="flex space-x-4">
-              <a href="https://instagram.com/unibridge.uz" target="_blank" rel="noopener" aria-label="Instagram" 
+              <a href="#" target="_blank" rel="noopener" aria-label="Instagram" 
                  class="w-10 h-10 bg-primary-500 hover:bg-primary-400 rounded-full flex items-center justify-center transition-colors duration-300">
                 <i class="pi pi-instagram"></i>
               </a>
-              <a href="https://t.me/unibridge_uz" target="_blank" rel="noopener" aria-label="Telegram"
+              <a href="#" target="_blank" rel="noopener" aria-label="Telegram"
                  class="w-10 h-10 bg-primary-500 hover:bg-primary-400 rounded-full flex items-center justify-center transition-colors duration-300">
                 <i class="pi pi-send"></i>
               </a>
-              <a href="https://youtube.com/@unibridge" target="_blank" rel="noopener" aria-label="YouTube"
+              <a href="#" target="_blank" rel="noopener" aria-label="YouTube"
                  class="w-10 h-10 bg-primary-500 hover:bg-primary-400 rounded-full flex items-center justify-center transition-colors duration-300">
                 <i class="pi pi-youtube"></i>
               </a>

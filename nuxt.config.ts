@@ -84,7 +84,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'UniBridge.uz - Koreyada ta\'lim olish bo\'yicha professional yordam',
+      title: 'Koreyada ta\'lim olish bo\'yicha professional yordam',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },

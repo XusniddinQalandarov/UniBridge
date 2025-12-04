@@ -192,7 +192,7 @@ const successStories: SuccessStory[] = [
     name: 'Aziza Karimova',
     university: 'Seoul National University',
     year: '2024',
-    story: 'TOPIK 5 darajasi bilan Seoul National University kompyuter fanlari bo\'limiga 100% grant bilan qabul qilindim. UniBridge menga har bir qadamda yordam berdi.',
+    story: 'TOPIK 5 darajasi bilan Seoul National University kompyuter fanlari bo\'limiga 100% grant bilan qabul qilindim. Har bir qadamda menga professional yordam berildi.',
     achievements: ['100% grant', 'TOPIK 5', 'Kompyuter fanlari'],
     icon: 'pi pi-star',
     color: '#1646A2'
@@ -201,7 +201,7 @@ const successStories: SuccessStory[] = [
     name: 'Bobur Usmanov',
     university: 'KAIST',
     year: '2024',
-    story: 'KAIST - bu mening orzuim edi. UniBridge jamoasi menga grant olishda va barcha hujjatlarni tayyorlashda juda katta yordam ko\'rsatdi.',
+    story: 'KAIST - bu mening orzuim edi. Menga grant olishda va barcha hujjatlarni tayyorlashda juda katta yordam ko\'rsatildi.',
     achievements: ['To\'liq grant', 'Magistratura', 'AI ixtisosligi'],
     icon: 'pi pi-graduation-cap',
     color: '#1646A2'
@@ -210,7 +210,7 @@ const successStories: SuccessStory[] = [
     name: 'Nilufar Rahimova',
     university: 'Yonsei University',
     year: '2023',
-    story: 'Yonsei University biznes menejmentda o\'qiyapman. UniBridge menga to\'g\'ri yo\'nalish berdi va universitet tanlashda professional maslahat berdi.',
+    story: 'Yonsei University biznes menejmentda o\'qiyapman. Menga to\'g\'ri yo\'nalish berildi va universitet tanlashda professional maslahat olindim.',
     achievements: ['50% stipendiya', 'Biznes', 'Ingliz dastur'],
     icon: 'pi pi-briefcase',
     color: '#1646A2'
@@ -219,7 +219,7 @@ const successStories: SuccessStory[] = [
     name: 'Sardor Aliyev',
     university: 'Korea University',
     year: '2023',
-    story: 'Korea University yuridik fakultetida o\'qiyapman. Grant olishda va visa jarayonida UniBridge ning yordami bebaho edi.',
+    story: 'Korea University yuridik fakultetida o\'qiyapman. Grant olishda va visa jarayonida yordam bebaho edi.',
     achievements: ['Yuridik fakultet', '70% grant', 'TOPIK 4'],
     icon: 'pi pi-book',
     color: '#1646A2'

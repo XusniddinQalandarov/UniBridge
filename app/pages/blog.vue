@@ -200,7 +200,7 @@ const posts: Post[] = [
     title: '2025-yil uchun yangi grant dasturlari e\'lon qilindi',
     excerpt: 'Koreya hukumati 2025-yil uchun xalqaro talabalar uchun yangi grant dasturlarini e\'lon qildi. KGSP dasturi 30% ko\'paytirildi...',
     date: '25 oktyabr 2024',
-    author: 'UniBridge Team',
+    author: 'Admin',
     views: '1,245',
     comments: '23',
     icon: 'pi pi-megaphone'
@@ -248,7 +248,7 @@ const posts: Post[] = [
     title: 'KAIST yangi ixtisoslashuvlarni taqdim etdi',
     excerpt: 'Korea Advanced Institute of Science and Technology 2025-yilda AI va Data Science bo\'yicha yangi magistratura dasturlarini boshlaydi...',
     date: '5 oktyabr 2024',
-    author: 'UniBridge Team',
+    author: 'Admin',
     views: '1,780',
     comments: '29',
     icon: 'pi pi-bolt'

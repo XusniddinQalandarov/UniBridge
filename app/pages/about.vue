@@ -4,7 +4,7 @@
     <section class="bg-gradient-to-br from-primary-500 to-primary-400 text-white py-16 text-center">
       <div class="container">
         <h1 class="text-4xl lg:text-5xl font-bold text-white mb-4">Biz haqimizda</h1>
-        <p class="text-xl opacity-95">UniBridge - Koreyada ta'lim olish bo'yicha professional yordam</p>
+        <p class="text-xl opacity-95">Koreyada ta'lim olish bo'yicha professional yordam</p>
       </div>
     </section>
 
@@ -14,8 +14,8 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div class="space-y-6">
             <p class="text-lg leading-relaxed text-gray-700">
-              UniBridge kompaniyasi 2023-yildan beri O'zbekistonlik talabalarning 
-              Koreyaning eng yaxshi universitetlarida ta'lim olishlariga yordam beradi. 
+              Biz 2023-yildan beri O'zbekistonlik talabalarning 
+              Koreyaning eng yaxshi universitetlarida ta'lim olishlariga yordam beramiz. 
               Bizning maqsadimiz - har bir talabaning orzusini amalga oshirishda 
               professional yordam ko'rsatish.
             </p>
@@ -27,7 +27,7 @@
           </div>
           <div class="flex justify-center">
             <div class="bg-gray-50 rounded-xl p-8 flex items-center justify-center">
-              <img src="/images/img1.jpg" alt="UniBridge team" class="w-full h-auto rounded-xl object-cover max-w-md" />
+              <!-- Image removed -->
             </div>
           </div>
         </div>

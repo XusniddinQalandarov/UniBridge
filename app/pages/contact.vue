@@ -135,17 +135,17 @@
                 </div>
                 <div>
                   <h4 class="font-semibold mb-1 text-gray-800">Telefon</h4>
-                  <a href="tel:+998931050011" class="text-[#1646A2] hover:underline">+998 93 105-00-11</a>
+                  <a href="tel:+998" class="text-[#1646A2] hover:underline">+998 90 123-45-67</a>
                 </div>
               </div>
-
+              
               <div class="flex gap-4">
                 <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
                   <i class="pi pi-envelope text-xl text-[#1646A2]"></i>
                 </div>
                 <div>
                   <h4 class="font-semibold mb-1 text-gray-800">Email</h4>
-                  <a href="mailto:info@unibridge.uz" class="text-[#1646A2] hover:underline">info@unibridge.uz</a>
+                  <a href="mailto:info@example.uz" class="text-[#1646A2] hover:underline">info@example.uz</a>
                 </div>
               </div>
 
@@ -186,7 +186,7 @@
             <h3 class="text-xl font-bold mb-6 text-gray-900">Ijtimoiy tarmoqlar</h3>
             <div class="flex flex-col gap-3">
               <a
-                href="https://instagram.com/unibridge.uz"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="flex items-center gap-3 px-4 py-3 bg-white border-2 border-gray-200 rounded-lg hover:border-pink-500 hover:bg-pink-50 transition-all group"
@@ -195,7 +195,7 @@
                 <span class="font-medium text-gray-700 group-hover:text-pink-500">Instagram</span>
               </a>
               <a
-                href="https://t.me/unibridge_uz"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="flex items-center gap-3 px-4 py-3 bg-white border-2 border-gray-200 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-all group"
@@ -204,7 +204,7 @@
                 <span class="font-medium text-gray-700 group-hover:text-blue-500">Telegram</span>
               </a>
               <a
-                href="https://youtube.com/@unibridge"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="flex items-center gap-3 px-4 py-3 bg-white border-2 border-gray-200 rounded-lg hover:border-red-500 hover:bg-red-50 transition-all group"

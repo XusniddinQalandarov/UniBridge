@@ -4,7 +4,7 @@
       <!-- Logo -->
       <div class="flex-shrink-0">
         <NuxtLink :to="localePath('/')" class="no-underline flex items-center">
-          <img src="/images/logo.png" alt="UniBridge Logo" class="h-12 w-auto" />
+          <!-- Logo removed -->
         </NuxtLink>
       </div>
 
